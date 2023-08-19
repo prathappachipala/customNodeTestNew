@@ -1,0 +1,115 @@
+{
+    "workflowApiVersion": "1.1",
+    "metaData":
+    {
+        "icon": "images/icon.png",
+        "iconSmall": "images/iconSmall.png",
+        "category": "custom"
+    },
+
+    "type": "REST",
+    "lang":
+    {
+        "en-US":
+        {
+            "name": "Dynamic content",
+            "description": "Test app",
+            "step1Label": "Configure Activity"
+        }
+    },
+    "arguments":
+    {
+        "execute":
+        {
+            "inArguments": [
+                {
+                    "emailAddress": "{{InteractionDefaults.Email}}"
+                  },
+                  {
+                    "phoneNumber": "{{Contact.Default.PhoneNumber}}"
+                  }
+            ],
+            "outArguments": [{
+                "foundSignupDate": ""
+              }],
+            "url": "https://dynamic-template-test.vercel.app/journeybuilder/execute",
+            "verb": "POST",
+            "body": "",
+            "header": "",
+            "format": "json",
+            "useJwt": true,
+            "timeout": 10000
+        }
+    },
+    
+    "configurationArguments":
+    {
+        "applicationExtensionKey": "e5844165-904e-45df-8a14-9f0062f6e688",
+        "save":
+        {
+            "url": "https://dynamic-template-test.vercel.app/journeybuilder/save",
+            "verb": "POST",
+            "useJwt": true
+        },
+        "publish":
+        {
+            "url": "https://dynamic-template-test.vercel.app/journeybuilder/publish",
+            "verb": "POST",
+            "useJwt": true
+        },
+        "stop":
+        {
+            "url": "https://dynamic-template-test.vercel.app/journeybuilder/stop",
+            "verb": "POST",
+            "useJwt": true
+        },
+        "validate":
+        {
+            "url": "https://dynamic-template-test.vercel.app/journeybuilder/validate",
+            "verb": "POST",
+            "useJwt": true
+        }
+    },
+    "wizardSteps": [
+        { "label": "Step 1", "key": "step1" },
+        { "label": "Step 2", "key": "step2" },
+        { "label": "Step 3", "key": "step3" },
+        { "label": "Step 4", "key": "step4", "active": false }
+      ],
+    "userInterfaces":
+    {
+        "configModal": {
+            "height": 700,
+            "width": 1000,
+            "fullscreen": false
+        }
+    },
+    "schema": 
+    {
+        "arguments":{
+            "execute": {
+                "inArguments": [{
+                    "phoneNumber": {
+                      "dataType": "Phone",
+                      "isNullable": false,
+                      "direction": "in"
+                    }
+                  },
+                  {
+                    "emailAddress": {
+                      "dataType": "Email",
+                      "isNullable": false,
+                      "direction": "in"
+                    }
+                  }],
+                "outArguments": [{
+                    "foundSignupDate": {
+                      "dataType": "Date",
+                      "direction": "out",
+                      "access": "visible"
+                    }
+                  }]
+            }
+        }
+    }
+}
