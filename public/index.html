@@ -79,10 +79,11 @@
                 <div class="col-sm-2">
                   <div class="flex-column nav nav-pills" role="tablist">
                     <div class="nav flex-column nav-pills me-3" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                        <button class="nav-link active" id="v-pills-dynamic1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dynamic1" type="button" role="tab" aria-controls="v-pills-dynamic1" aria-selected="true">Dynamic Group1</button>
-                        <button class="nav-link" id="v-pills-dynamic2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dynamic2" type="button" role="tab" aria-controls="v-pills-dynamic2" aria-selected="false">Dynamic Group2</button>
+                        <button class="nav-link active dynamicgroup" id="v-pills-dynamic1-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dynamic1" type="button" role="tab" aria-controls="v-pills-dynamic1" aria-selected="true">Dynamic Group1</button>
+                        <button class="nav-link dynamicgroup" id="v-pills-dynamic2-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dynamic2" type="button" role="tab" aria-controls="v-pills-dynamic2" aria-selected="false">Dynamic Group2</button>
+                       
                       </div>
-            
+                      <button class="nav-link"  type="button" id="addGroup" ><i class="fa fa-plus fa-3x text-success"></i></button>
                   </div>
                 </div>
                 <div class="col-sm-8">
@@ -91,7 +92,7 @@
                       <form class="">
                         <div class="container">
                           <div class="row">
-                            <div class="col-lg-6 col-md col">
+                            <div class="col-lg-12 col-md col">
                               <div class="justify-content-md-left row">
                                 <div class="col-lg-7 col">
                                   <h5 style="font-size: 15px; text-align: left;">Dynamic Attribute</h5>
@@ -99,8 +100,8 @@
                                 <div class="col-lg-5 col"></div>
                               </div>
                               <div class="row">
-                                <div class="col">
-                                  <div class="mb-3">
+                                <div class="col-md-4">
+                                  <!-- <div class="mb-3">
                                     <div class="form-check form-check-inline" style="font-size: 12px;">
                                       <input name="group1" type="checkbox" id="1" class="form-check-input">
                                       <label title="" for="1" class="form-check-label">Contact Data</label>
@@ -109,17 +110,44 @@
                                       <input name="group1" type="checkbox" id="2" class="form-check-input">
                                       <label title="" for="2" class="form-check-label">Journey Data</label>
                                     </div>
-                                  </div>
-                                  <select aria-label="Dynamic Attribute" class="form-select" style="font-size: 12px;">
+                                  </div> -->
+                                  <select aria-label="Dynamic Attribute" class="form-select " style="font-size: 12px;">
                                     <option>Dynamic Attribute</option>
                                     <option value="2">2</option>
                                     <option value="3">3</option>
                                     <option value="4">4</option>
                                   </select>
                                 </div>
+                                <div class="col-md-4">
+                                    <!-- <div class="mb-3">
+                                      <div class="form-check form-check-inline" style="font-size: 12px;">
+                                        <input name="group1" type="checkbox" id="1" class="form-check-input">
+                                        <label title="" for="1" class="form-check-label">Contact Data</label>
+                                      </div>
+                                      <div class="form-check form-check-inline" style="font-size: 12px;">
+                                        <input name="group1" type="checkbox" id="2" class="form-check-input">
+                                        <label title="" for="2" class="form-check-label">Journey Data</label>
+                                      </div>
+                                    </div> -->
+                                    <select aria-label="Dynamic Attribute" class="form-select " style="font-size: 12px;">
+                                      <option>Select Relationship</option>
+                                      <option value="2">equals</option>
+                                      <option value="3">greater </option>
+                                      <option value="4">greater than</option>
+                                      <option value="3">less </option>
+                                      <option value="4">less than</option>
+                                    </select>
+                                  </div>
+                                  <div class="col-md-4">
+                                
+                                    <div class="form-input">
+                                       
+                                        <input type="text" class="form-control" id="usr">
+                                      </div>
+                                  </div>
                               </div>
                             </div>
-                            <div class="col-lg-6 col-md col">
+                            <div class="col-lg-12 col-md col mt-3">
                                 
                               <div class="justify-content-md-left justify-content-lg-left row">
                                 <div class="col-lg-7 col">
@@ -127,8 +155,8 @@
                                 </div>
                                 <div class="col-lg-5 col"></div>
                               </div>
-                              <div class="row">
-                                <div class="col">
+                              <div class="row ">
+                                <!-- <div class="col">
                                   <div class="mb-3">
                                     <div class="form-check form-check-inline" style="font-size: 12px;">
                                       <input name="group1" type="checkbox" id="1" class="form-check-input">
@@ -139,17 +167,19 @@
                                       <label title="" for="2" class="form-check-label">Journey Data</label>
                                     </div>
                                   </div>
+                                </div> -->
+                                <div class="col"> <select aria-label="Dynamic Attribute" class="form-select w-75" style="font-size: 12px;">
+                                    <option>Dynamic Attribute</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                  </select>
                                 </div>
-                                <select aria-label="Dynamic Attribute" class="form-select" style="font-size: 12px;">
-                                  <option>Dynamic Attribute</option>
-                                  <option value="2">2</option>
-                                  <option value="3">3</option>
-                                  <option value="4">4</option>
-                                </select>
+                                
                               </div>
                             </div>
                           </div>
-                          <div class="mt-4 row">
+                          <div class="mt-2 row">
                             <div class="col-lg-2 col-md col">
                               <label class="form-label" style="font-size: 12px;">Duration</label>
                               <select aria-label="1" class="form-select" style="font-size: 12px;">
@@ -178,23 +208,33 @@
                               </select>
                             </div>
                           </div>
-                          
+                          <div class="row">
+                            <div class="col-lg-2 col-md col"></div>
+                            <div class="col-lg-5 col-md col">
+                              <button id="close" class="btn btn-danger btn-sm" style="text-decoration: none; margin-top: 100px;">Close</button>
+                            </div>
+                            <div class="col-lg-5 col-md col">
+                              <button id="done" class="btn btn-primary btn-sm" style="text-decoration: none; margin-top: 100px;">Done</button>
+                            </div>
+                          </div>
                         </div>
                       </form>
                     </div>
-                    <div role="tabpanel" id="v-pills-dynamic2-tab" aria-labelledby="v-pills-dynamic2-tab" class="fade tab-pane">Second tab content</div>
+                    <div role="tabpanel" id="v-pills-dynamic2" aria-labelledby="v-pills-dynamic2-tab" class="fade tab-pane">Second tab content
+                        <div class="row">
+                            <div class="col-lg-2 col-md col"></div>
+                            <div class="col-lg-5 col-md col">
+                              <button id="close" class="btn btn-danger btn-sm" style="text-decoration: none; margin-top: 100px;">Close</button>
+                            </div>
+                            <div class="col-lg-5 col-md col">
+                              <button id="done" class="btn btn-primary btn-sm" style="text-decoration: none; margin-top: 100px;">Done</button>
+                            </div>
+                          </div>
+                    </div>
                   </div>
                 </div>
               </div>
-              <div class="row">
-                <div class="col-lg-2 col-md col"></div>
-                <div class="col-lg-5 col-md col">
-                  <button id="close" class="btn btn-danger btn-sm" style="text-decoration: none; margin-top: 100px;">Close</button>
-                </div>
-                <div class="col-lg-5 col-md col">
-                  <button id="done" class="btn btn-primary btn-sm" style="text-decoration: none; margin-top: 100px;">Done</button>
-                </div>
-              </div>
+              
             </div>
           </div>
           </div>
@@ -213,10 +253,38 @@
           $("#dynamicSetting,#close").on("click",function(){
               $("#customDiv").toggle();
           });
-          
-  
+
+      });
+      $("#addGroup").on("click",function(){
+        var grouplength = $(".dynamicgroup").length+1;
+       
+        var addGroup = ' <button class="nav-link dynamicgroup" id="v-pills-dynamic'+grouplength+'-tab" data-bs-toggle="pill" data-bs-target="#v-pills-dynamic'+grouplength+'" type="button" role="tab" aria-controls="v-pills-dynamic'+grouplength+'" aria-selected="false">Dynamic Group'+grouplength+'</button>';
+
+        var addTab ='<div role="tabpanel" id="v-pills-dynamic'+grouplength+'" aria-labelledby="v-pills-dynamic'+grouplength+'-tab" class="fade tab-pane">New tab content<div class="row">'+
+                             '<div class="col-lg-4 col-md col">'+
+                              '<button  data-id="v-pills-dynamic'+grouplength+'" class="removeGroup btn btn-danger btn-sm" style="text-decoration: none; margin-top: 100px;">Remove group</button>'+
+                            '</div>'+
+                            '<div class="col-lg-4 col-md col">'+
+                              '<button id="close" class="btn btn-warning btn-sm" style="text-decoration: none; margin-top: 100px;">Close</button>'+
+                            '</div>'+
+                           
+                            '<div class="col-lg-4 col-md col">'+
+                              '<button id="done" class="btn btn-primary btn-sm" style="text-decoration: none; margin-top: 100px;">Done</button>'+
+                            '</div>'+
+                           
+                          '</div></div>';
+
+        $("#v-pills-dynamic2-tab").parent().append(addGroup);
+        $("#v-pills-tabContent").parent().append(addTab);
       });
      
+        $(document).on('click', '.removeGroup', function(event) {
+            
+            var removeId =$(this).attr('data-id');
+            $("#"+removeId).remove();
+            $("#"+removeId+'-tab').remove();
+            
+        });
       
   </script>
-</html>
+  </html>
