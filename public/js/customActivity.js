@@ -33,7 +33,7 @@ define(["postmonger"], function (Postmonger) {
     connection.trigger("requestEndpoints");
 
     // Disable the next button if a value isn't selected
-    $("#select1").change(function () {
+ /*   $("#select1").change(function () {
       var message = getMessage();
       connection.trigger("updateButton", {
         button: "next",
@@ -51,7 +51,7 @@ define(["postmonger"], function (Postmonger) {
       steps[3].active = !steps[3].active; // toggle active
 
       connection.trigger("updateSteps", steps);
-    });
+    }); */
   }
 
   function initialize(data) {
