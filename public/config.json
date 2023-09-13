@@ -12,8 +12,8 @@
     {
         "en-US":
         {
-            "name": "Dynamic content",
-            "description": "Test app",
+            "name": "Dynamic Wait Activity",
+            "description": "Dynamic Wait Activity",
             "step1Label": "Configure Activity"
         }
     },
