@@ -32,7 +32,7 @@
             "outArguments": [{
                 "foundSignupDate": ""
               }],
-            "url": "https://dynamic-template-test.vercel.app/journeybuilder/execute",
+            "url": "https://custom-node-test-new.vercel.app/journeybuilder/execute",
             "verb": "POST",
             "body": "",
             "header": "",
@@ -44,28 +44,28 @@
     
     "configurationArguments":
     {
-        "applicationExtensionKey": "db985f47-a501-4869-98b6-8e7abb744e3e",
+        "applicationExtensionKey": "e5844165-904e-45df-8a14-9f0062f6e688",
         "save":
         {
-            "url": "https://dynamic-template-test.vercel.app/journeybuilder/save",
+            "url": "https://custom-node-test-new.vercel.app/journeybuilder/save",
             "verb": "POST",
             "useJwt": true
         },
         "publish":
         {
-            "url": "https://dynamic-template-test.vercel.app/journeybuilder/publish",
+            "url": "https://custom-node-test-new.vercel.app/journeybuilder/publish",
             "verb": "POST",
             "useJwt": true
         },
         "stop":
         {
-            "url": "https://dynamic-template-test.vercel.app/journeybuilder/stop",
+            "url": "https://custom-node-test-new.vercel.app/journeybuilder/stop",
             "verb": "POST",
             "useJwt": true
         },
         "validate":
         {
-            "url": "https://dynamic-template-test.vercel.app/journeybuilder/validate",
+            "url": "https://custom-node-test-new.vercel.app/journeybuilder/validate",
             "verb": "POST",
             "useJwt": true
         }
