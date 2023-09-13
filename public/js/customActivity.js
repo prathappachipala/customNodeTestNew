@@ -19,6 +19,8 @@ define(["postmonger"], function (Postmonger) {
   connection.on("requestedTokens", onGetTokens);
   connection.on("requestedEndpoints", onGetEndpoints);
 
+  connection.on('requestedSchema', handelSchema)
+  
   connection.on("clickedNext", onClickedNext);
   connection.on("clickedBack", onClickedBack);
   connection.on("gotoStep", onGotoStep);
@@ -31,6 +33,7 @@ define(["postmonger"], function (Postmonger) {
 
     connection.trigger("requestTokens");
     connection.trigger("requestEndpoints");
+    connection.trigger('requestSchema')
 
     // Disable the next button if a value isn't selected
     $("#select1").change(function () {
@@ -53,6 +56,13 @@ define(["postmonger"], function (Postmonger) {
       connection.trigger("updateSteps", steps);
     }); 
   }
+
+   
+  function handelSchema(schema) {
+
+    console.log('*** Schema ***', JSON.stringify(schema))
+
+}
 
   function initialize(data) {
     if (data) {
