@@ -64,6 +64,37 @@ define(["postmonger"], function (Postmonger) {
 
 }
 
+   function onRequestedDataSources(dataSources) {
+
+        console.log('*** requestedDataSources ***')
+
+        console.log(dataSources)
+
+    }
+
+ 
+
+    function onRequestedInteraction(interaction) {
+
+        console.log('*** requestedInteraction ***')
+
+        console.log(interaction.triggers[0].metaData.eventDefinitionKey)
+
+        dynamincDEName = interaction.triggers[0].metaData.eventDefinitionKey
+
+    }
+ 
+
+    function onRequestedTriggerEventDefinition(eventDefinitionModel) {
+
+        console.log('*** requestedTriggerEventDefinition ***')
+
+        console.log(eventDefinitionModel)
+
+        dynamincDEName = eventDefinitionModel['eventDefinitionKey']
+
+    }
+
   function initialize(data) {
     if (data) {
       payload = data;
