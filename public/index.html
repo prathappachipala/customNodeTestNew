@@ -205,7 +205,7 @@
     </div>
   </body>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-  <script src="js/timezones.full.js"></script>
+  <!--<script src="js/timezones.full.js"></script>
 
   <script>
     $('.select').timezones();
@@ -219,15 +219,15 @@
       });
       $(document).on('click','.select',function(){
         $('.select').timezones();
-      });
+      }); -->
       
       $(document).on('click', '.dynamicgroup', function(event) {
         if($(this).attr('data-tab') != undefined){
           $(".dynamic-tabs1").css('display','none');
           $("#"+$(this).attr('data-tab')).css('display','block');
-          $('.select').timezones();
+         <!-- $('.select').timezones(); --> 
         }
-      });
+      }); 
       $(document).on('click', '#addGroup', function(event) {
 
       
