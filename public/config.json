@@ -2,8 +2,8 @@
     "workflowApiVersion": "1.1",
     "metaData":
     {
-        "icon": "images/icon.png",
-        "iconSmall": "images/iconSmall.png",
+        "icon": "images/icon-throttle.png",
+        "iconSmall": "images/icon-throttle.png",
         "category": "custom"
     },
 
