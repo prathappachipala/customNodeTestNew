@@ -5,13 +5,11 @@ define([
 ) {
     'use strict';
 
-    
     var connection = new Postmonger.Session();
     var authTokens = {};
     var payload = {};
     var lastStepEnabled = false;
     var steps = [{ "label": "Configure Postcard", "key": "step1" }];
-    var schemadata ={};
 
     var currentStep = steps[0].key;
 
@@ -46,20 +44,7 @@ define([
     }
 
     function handelSchema(schema) {
-        console.log("####Schema without strignify#####",schema);
         console.log('*** Schema ***', JSON.stringify(schema))
-        schemadata =schema;
-       // var getattributes = [];
-        $(".attribute-select").html('');
-        $(".attibute-date").html('');
-        for(var i=0;i<schema.schema.length;i++){
-          //  getattributes.push(schema.schema[i].name);
-            $(".attribute-select").append('<option value="'+schema.schema[i].name+'">'+schema.schema[i].name+'</option>');
-            if(schema.schema[i].type=='Date'){
-                $(".attibute-date").append('<option value="'+schema.schema[i].name+'">'+schema.schema[i].name+'</option>');
-            }
-        }
-
     }
 
 
@@ -79,9 +64,6 @@ define([
         if (data) {
             payload = data;
         }
-        // var newData = handelSchema();
-
-        // console.log("$$$$$$$$$$$$ New Data coming $$$$$$$",JSON.stringify(newData));
         
         var hasInArguments = Boolean(
             payload['arguments'] &&
@@ -139,20 +121,6 @@ define([
         console.log(payload);
         connection.trigger('updateActivity', payload);
     }
-
-    $(document).on('click', '#addGroup', function(event) { 
-
-        console.log("Work inside");
-        console.log("Schema data",schemadata);
-        $(".attribute-select").html('');
-        $(".attibute-date").html('');
-        for(var i=0;i<schemadata.schema.length;i++){
-            $(".attribute-select").append('<option value="'+schemadata.schema[i].name+'">'+schemadata.schema[i].name+'</option>');
-            if(schemadata.schema[i].type=='Date'){
-                $(".attibute-date").append('<option value="'+schemadata.schema[i].name+'">'+schemadata.schema[i].name+'</option>');
-            }
-        }
-    });
 
     $('#btn-preview').click(function () {
         $('#postcard-preview-text').html($('#postcard-text').val());
