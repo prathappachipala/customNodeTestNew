@@ -12,8 +12,8 @@
     {
         "en-US":
         {
-            "name": "Dynamic Wait Activity",
-            "description": "Dynamic Wait Activity",
+            "name": "Domain Throttle Activity",
+            "description": "Domain Throttle Activity",
             "step1Label": "Configure Activity"
         }
     },
