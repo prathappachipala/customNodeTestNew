@@ -21,17 +21,8 @@
     {
         "execute":
         {
-            "inArguments": [
-                {
-                    "emailAddress": "{{InteractionDefaults.Email}}"
-                  },
-                  {
-                    "phoneNumber": "{{Contact.Default.PhoneNumber}}"
-                  }
-            ],
-            "outArguments": [{
-                "foundSignupDate": ""
-              }],
+            "inArguments": [],
+            "outArguments": [],
             "url": "https://custom-node-test-new.vercel.app/journeybuilder/execute",
             "verb": "POST",
             "body": "",
@@ -83,27 +74,8 @@
     {
         "arguments":{
             "execute": {
-                "inArguments": [{
-                    "phoneNumber": {
-                      "dataType": "Phone",
-                      "isNullable": false,
-                      "direction": "in"
-                    }
-                  },
-                  {
-                    "emailAddress": {
-                      "dataType": "Email",
-                      "isNullable": false,
-                      "direction": "in"
-                    }
-                  }],
-                "outArguments": [{
-                    "foundSignupDate": {
-                      "dataType": "Date",
-                      "direction": "out",
-                      "access": "visible"
-                    }
-                  }]
+                "inArguments": [],
+                "outArguments": []
             }
         }
     }
