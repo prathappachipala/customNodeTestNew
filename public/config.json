@@ -3,6 +3,7 @@
     "metaData":
     {
         "icon": "images/icon-throttle.png",
+        "iconSmall": "images/icon-throttle.png",
         "category": "custom"
     },
 
