@@ -103,7 +103,16 @@
                                 <div class="col-md-3 text-left">
                                     <label for="domain_name1">Domain</label>
                                     <div class="form-input">
-                                        <input type="text" class="form-control" id="domain_name1">
+                                        <select aria-label="Dynamic Attribute" class="form-select " id="domain"
+                                        style="font-size: 12px;">
+                                    <option></option>
+                                    <option value="gmail.com">gmail.com</option>
+                                    <option value="yahoo.com">yahoo.com</option>
+                                    <option value="4">nagarro.com</option>
+                                    <option value="6">bms.com</option>
+                                    <option value="8">zs.com</option>
+                                   
+                                </select>
                                     </div>
                                 </div>
                                 <div class="col-md-1">
@@ -117,30 +126,20 @@
                                     <select aria-label="Dynamic Attribute" class="form-select " id="duration1"
                                             style="font-size: 12px;">
                                         <option></option>
-                                        <option value="0">12:00 am</option>
-                                        <option value="1"> 1:00 am</option>
-                                        <option value="2"> 2:00 am</option>
-                                        <option value="3"> 3:00 am</option>
-                                        <option value="4"> 4:00 am</option>
-                                        <option value="5"> 5:00 am</option>
-                                        <option value="6"> 6:00 am</option>
-                                        <option value="7"> 7:00 am</option>
-                                        <option value="8"> 8:00 am</option>
-                                        <option value="9"> 9:00 am</option>
-                                        <option value="10">10:00 am</option>
-                                        <option value="11">11:00 am</option>
-                                        <option value="12">12:00 pm</option>
-                                        <option value="13">1:00 pm</option>
-                                        <option value="14">2:00 pm</option>
-                                        <option value="15">3:00 pm</option>
-                                        <option value="16">4:00 pm</option>
-                                        <option value="17">5:00 pm</option>
-                                        <option value="18">6:00 pm</option>
-                                        <option value="19">7:00 pm</option>
-                                        <option value="20">8:00 pm</option>
-                                        <option value="21">9:00 pm</option>
-                                        <option value="22">10:00 pm</option>
-                                        <option value="23">11:00 pm</option>
+                                        <option value="1">1 hr</option>
+                                        <option value="2">2 hr</option>
+                                        <option value="4">4 hr</option>
+                                        <option value="6">6 hr</option>
+                                        <option value="8">8 hr</option>
+                                        <option value="10">10 hr</option>
+                                        <option value="12">12 hr</option>
+                                        <option value="14">14 hr</option>
+                                        <option value="16">16 hr</option>
+                                        <option value="18">18 hr</option>
+                                        <option value="20">20 hr</option>
+                                        <option value="22">22 hr</option>
+                                        <option value="24">24 hr</option>
+                                       
                                     </select>
 
                                 </div>
@@ -182,7 +181,14 @@
             ' <div class="col-md-3 text-left">' +
             ' <label for="domain_name' + grouplength + '">Domain</label>' +
             ' <div class="form-input">      ' +
-            ' <input type="text" class="form-control" id="domain_name' + grouplength + '">' +
+                ' <select aria-label="Dynamic Attribute" class="form-select " id="domain' + grouplength + '" style="font-size: 12px;">' +
+            '   <option></option>' +
+            ' <option value="gmail.com"> gmail.com</option>' +
+            ' <option value="yahoo.com">yahoo.com</option>' +
+            ' <option value="nagarro.com">nagarro.com</option>' +
+            ' <option value="bms.com">bms.com</option>' +
+            ' <option value="zs.com">zs.com</option>' +
+            '</select>' +
             '</div>' +
             '</div>' +
             ' <div class="col-md-1">' +
@@ -195,30 +201,19 @@
             '  <label for="duration' + grouplength + '">Duration</label>' +
             ' <select aria-label="Dynamic Attribute" class="form-select " id="duration' + grouplength + '" style="font-size: 12px;">' +
             '   <option></option>' +
-            '<option value="0">12:00 am</option>' +
-            ' <option value="1"> 1:00 am</option>' +
-            ' <option value="2"> 2:00 am</option>' +
-            ' <option value="3"> 3:00 am</option>' +
-            ' <option value="4"> 4:00 am</option>' +
-            ' <option value="5"> 5:00 am</option>' +
-            ' <option value="6"> 6:00 am</option>' +
-            '  <option value="7"> 7:00 am</option>' +
-            '<option value="8"> 8:00 am</option>' +
-            ' <option value="9"> 9:00 am</option>' +
-            ' <option value="10">10:00 am</option>' +
-            ' <option value="11">11:00 am</option>' +
-            ' <option value="12">12:00 pm</option>' +
-            ' <option value="13">1:00 pm</option>' +
-            ' <option value="14">2:00 pm</option>' +
-            ' <option value="15">3:00 pm</option>' +
-            ' <option value="16">4:00 pm</option>' +
-            '<option value="17">5:00 pm</option>' +
-            ' <option value="18">6:00 pm</option>' +
-            ' <option value="19">7:00 pm</option>' +
-            ' <option value="20">8:00 pm</option>' +
-            ' <option value="21">9:00 pm</option>' +
-            '  <option value="22">10:00 pm</option>' +
-            ' <option value="23">11:00 pm</option>' +
+            ' <option value="1"> 1 hr</option>' +
+            ' <option value="2"> 2 hr</option>' +
+            ' <option value="4"> 4 hr</option>' +
+            ' <option value="6"> 6 hr</option>' +
+            ' <option value="8"> 8 hr</option>' +
+            ' <option value="10"> 10 hr</option>' +
+            '  <option value="12"> 12 hr</option>' +
+            '<option value="14"> 14 hr</option>' +
+            ' <option value="16"> 16 hr</option>' +
+            ' <option value="18">18 hr</option>' +
+            ' <option value="20">20 hr</option>' +
+            ' <option value="22">22 hr</option>' +
+            ' <option value="24">24 hr</option>' +
             '</select>' +
 
             '</div>' +
